@@ -34,7 +34,7 @@ public class Program
 
         byte[] passwordBytes = Encoding.UTF8.GetBytes("password");
         passwordBytes = SHA256.Create().ComputeHash(passwordBytes);
-
+        //Copy shellcode below
         byte[] aesshellcode = new byte[1] { 0x72 };
         byte[] shellcode = AES_Decrypt(aesshellcode, passwordBytes);
 
