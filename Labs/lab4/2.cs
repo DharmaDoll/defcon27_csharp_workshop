@@ -42,8 +42,8 @@ public class Program
 
     static void Main()
     {
-        string key = "ABCD";
-
+        string key = "ABCDE";
+        //Copy shellcode below
         byte[] xorshellcode = new byte[1] { 0xbd };
 
         byte[] shellcode;
