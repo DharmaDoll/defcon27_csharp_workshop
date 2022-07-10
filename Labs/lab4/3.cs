@@ -10,9 +10,10 @@ public class Program
 
     static void Main()
     {
+        //Copy shellcode below
         byte[] shellcode = new byte[1] { 0xfc };
 
-        byte[] passwordBytes = Encoding.UTF8.GetBytes("pass");
+        byte[] passwordBytes = Encoding.UTF8.GetBytes("password");
 
         passwordBytes = SHA256.Create().ComputeHash(passwordBytes);
 
