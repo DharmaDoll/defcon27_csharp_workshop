@@ -84,6 +84,10 @@ The goal of this lab is to reduce detection of the custom payloads by signature 
 
 The goal of this lab is to execute a Powershell script and avoid to use the powershell.exe binary by leveraging the .NET framework and C#. Using this technique, we will get a Powershell Empire agent.  
 
+```powershell
+csc.exe /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\WindowsPowerShell\3.0\System.Management.Automation.dll" 1.cs
+```
+
 ### Lab 6 : DLL Injection
 
 The goal of this lab is to implement the DLL Injection technique using C# and obtain a reverse shell from a victim host. Using 3 different exercises, we will understand and implement the different steps for a successful injection.
