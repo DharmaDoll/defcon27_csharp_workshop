@@ -67,6 +67,8 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe /logfile=
 /LogToConsole=false /U 2.exe
 #we can abuse InstallUtil.exe and get it to run our code. This way we can bypass application whitelisting technologies and look less suspicious to an analyst.
 ```
+#### Bypssing Applocker
+https://jpn.nec.com/cybersecurity/blog/220916/index.html
 
 ### Lab 4 : Shellcode Obfuscation
 
